@@ -12,11 +12,11 @@ content-foreground = ${color.BG}
 
 [module/dot]
 type = custom/text
-content = 
+content = " "
 
 content-background = ${color.BG}
 content-foreground = ${color.BGL}
-content-padding = 2
+content-padding = 1
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
