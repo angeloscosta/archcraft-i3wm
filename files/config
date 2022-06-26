@@ -51,10 +51,6 @@ exec --no-startup-id redshift
 
 exec --no-startup-id betterlockscreen -u ~/Pictures/Wallpaper/Lockscreen/
 
-exec steam-native
-
-#exec discord
-
 exec --no-startup-id scdl me -f -c --path ~/Music/SoundCloud/Likes/
 
 exec --no-startup-id xset m 0 0
