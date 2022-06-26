@@ -5,6 +5,17 @@
 ## It's a very basic and simple config file, for full configuration...
 ## See, /usr/share/doc/alacritty/example/alacritty.yml
 
+# Shell
+#
+# You can set shell.program to the path of your favorite shell, e.g. /bin/fish.
+# Entries in shell.args are passed unmodified as arguments to the shell.
+#
+#\n\nshell:\n program: /bin/bash\n args:\n - --login\n
+shell:
+  program: /bin/fish
+  args:
+    - --login
+
 ## Import files (Colors, Fonts, Etc)
 import:
   - ~/.config/i3/alacritty/colors.yml
@@ -34,7 +45,7 @@ window:
   multiplier: 3
 
 ## Background opacity
-  opacity: 1.0
+  opacity: 0.5
 
 ## Cursor
 cursor:
