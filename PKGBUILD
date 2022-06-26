@@ -4,13 +4,13 @@ pkgname=archcraft-i3wm
 pkgver=1.0
 pkgrel=5
 pkgdesc="i3wm Configurations for Archcraft"
-url="https://github.com/archcraft-os/archcraft-i3wm"
+url="https://github.com/angeloscosta/archcraft-i3wm"
 arch=('any')
 license=('GPL3')
 makedepends=('git')
-depends=('i3-gaps' 'hsetroot'
+depends=('i3-gaps' 'nitrogen'
 		'archcraft-skeleton'
-		'alacritty' 'thunar' 'geany'
+		'alacritty' 'thunar' 'sublime-text-4'
 		'rofi' 'polybar' 'dunst'
 		'mpd' 'mpc'
 		'maim' 'xclip' 'viewnior'
