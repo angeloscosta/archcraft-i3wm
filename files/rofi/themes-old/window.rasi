@@ -6,6 +6,8 @@ configuration {
     show-icons:                     false;
     display-drun: 					"";
     drun-display-format:            "{icon} {name}";
+    display-window: 				"Windows :";
+    window-format: 					" {w}  ·  {c}  ·  {t}";
     disable-history:                false;
 	click-to-exit: 					true;
 }
@@ -17,9 +19,9 @@ window {
     background-color:               @background;
     text-color:                     @foreground;
     border:                  		0px;
-    border-color:                  	#E5CEAEff;
+    border-color:                  	@selected;
     border-radius:                  12px;
-    width:                          300px;
+    width:                          450px;
     location:                       center;
     anchor:                         center;
     x-offset:                       0;
@@ -33,13 +35,13 @@ prompt {
 	background-color: 				@background;
 	text-color: 					@foreground;
     border:                  		0px 0px 0px 0px;
-    border-color:                  	#E5CEAEff;
+    border-color:                  	@selected;
     border-radius:                  0px;
 }
 
 textbox-prompt-colon {
 	expand: 						false;
-	str: 							"";
+	str: 							"";
     border-radius:                  10px;
     background-color:               @highlight;
     text-color:                     @background;
@@ -65,7 +67,7 @@ inputbar {
     text-color:                     @foreground;
     border:                  		0px;
     border-radius:                  0px;
-    border-color:                  	#E5CEAEff;
+    border-color:                  	@selected;
     expand:                         false;
     margin:                         0px 0px 0px 0px;
     padding:                        0px;
@@ -82,7 +84,7 @@ case-indicator {
 listview {
     background-color:               @background;
     columns:                        1;
-    lines:							5;
+    lines:							6;
     spacing:                        4px;
     cycle:                          true;
     dynamic:                        true;
@@ -123,11 +125,11 @@ element-text {
 }
 
 element selected {
-    background-color:               #E5CEAEff;
+    background-color:               @selected;
     text-color:                     @background;
     border:                  		0px;
     border-radius:                  10px;
-    border-color:                  	#E5CEAEff;
+    border-color:                  	@selected;
 }
 
 element.active,
@@ -135,10 +137,11 @@ element.selected.urgent {
   background-color: @on;
   text-color: @background;
   border-color: @on;
+  border-radius: 10px;
 }
 
 element.selected.urgent {
-  border-color: #E5CEAEff;
+  border-color: @selected;
 }
 
 element.urgent,
@@ -146,8 +149,9 @@ element.selected.active {
   background-color: @off;
   text-color: @background;
   border-color: @off;
+  border-radius: 10px;
 }
 
 element.selected.active {
-  border-color: #E5CEAEff;
+  border-color: @selected;
 }

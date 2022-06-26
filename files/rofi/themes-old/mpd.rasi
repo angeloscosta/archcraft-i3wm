@@ -17,9 +17,9 @@ window {
     background-color:               @background;
     text-color:                     @foreground;
     border:                  		0px;
-    border-color:                  	#E5CEAEff;
+    border-color:                  	@selected;
     border-radius:                  12px;
-    width:                          300px;
+    width:                          550px;
     location:                       center;
     anchor:                         center;
     x-offset:                       0;
@@ -33,13 +33,13 @@ prompt {
 	background-color: 				@background;
 	text-color: 					@foreground;
     border:                  		0px 0px 0px 0px;
-    border-color:                  	#E5CEAEff;
+    border-color:                  	@selected;
     border-radius:                  0px;
 }
 
 textbox-prompt-colon {
 	expand: 						false;
-	str: 							"";
+	str: 							"ﱘ";
     border-radius:                  10px;
     background-color:               @highlight;
     text-color:                     @background;
@@ -65,7 +65,7 @@ inputbar {
     text-color:                     @foreground;
     border:                  		0px;
     border-radius:                  0px;
-    border-color:                  	#E5CEAEff;
+    border-color:                  	@selected;
     expand:                         false;
     margin:                         0px 0px 0px 0px;
     padding:                        0px;
@@ -81,9 +81,9 @@ case-indicator {
 
 listview {
     background-color:               @background;
-    columns:                        1;
-    lines:							5;
-    spacing:                        4px;
+    columns:                        6;
+    lines:							1;
+    spacing:                        10px;
     cycle:                          true;
     dynamic:                        true;
     layout:                         vertical;
@@ -97,11 +97,11 @@ mainbox {
 }
 
 element {
-    background-color:               @background;
+    background-color:               @background-alt;
     text-color:                     @foreground;
     orientation:                    horizontal;
-    border-radius:                  0px;
-    padding:                        5px;
+    border-radius:                  100%;
+    padding:                        25px;
 }
 
 element-icon {
@@ -116,18 +116,19 @@ element-icon {
 element-text {
     background-color: 				inherit;
     text-color:       				inherit;
+	font:							"feather 16";
     expand:                         true;
-    horizontal-align:               0;
+    horizontal-align:               0.5;
     vertical-align:                 0.5;
-    margin:                         2px 0px 2px 2px;
+    margin:                         0px;
 }
 
 element selected {
-    background-color:               #E5CEAEff;
+    background-color:               @selected;
     text-color:                     @background;
     border:                  		0px;
-    border-radius:                  10px;
-    border-color:                  	#E5CEAEff;
+    border-radius:                  100%;
+    border-color:                  	@selected;
 }
 
 element.active,
@@ -135,10 +136,11 @@ element.selected.urgent {
   background-color: @on;
   text-color: @background;
   border-color: @on;
+  border-radius: 100%;
 }
 
 element.selected.urgent {
-  border-color: #E5CEAEff;
+  border-color: @selected;
 }
 
 element.urgent,
@@ -146,8 +148,9 @@ element.selected.active {
   background-color: @off;
   text-color: @background;
   border-color: @off;
+  border-radius: 100%;
 }
 
 element.selected.active {
-  border-color: #E5CEAEff;
+  border-color: @selected;
 }

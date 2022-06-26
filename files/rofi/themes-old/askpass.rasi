@@ -14,7 +14,7 @@ window {
     padding:    			20px;
     border:					2px;
     border-radius:          8px;
-    border-color:           #E5CEAEff;
+    border-color:           @selected;
     location:               center;
     x-offset:               0;
     y-offset:               -4%;
@@ -23,5 +23,5 @@ window {
 entry {
     expand: 				true;
     width: 					150px;
-    text-color:				#E5CEAEff;
+    text-color:				@selected;
 }

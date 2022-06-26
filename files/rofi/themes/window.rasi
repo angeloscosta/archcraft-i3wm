@@ -19,7 +19,7 @@ window {
     background-color:               @background;
     text-color:                     @foreground;
     border:                  		0px;
-    border-color:                  	@selected;
+    border-color:                  	#E5CEAEff;
     border-radius:                  12px;
     width:                          450px;
     location:                       center;
@@ -35,7 +35,7 @@ prompt {
 	background-color: 				@background;
 	text-color: 					@foreground;
     border:                  		0px 0px 0px 0px;
-    border-color:                  	@selected;
+    border-color:                  	#E5CEAEff;
     border-radius:                  0px;
 }
 
@@ -67,7 +67,7 @@ inputbar {
     text-color:                     @foreground;
     border:                  		0px;
     border-radius:                  0px;
-    border-color:                  	@selected;
+    border-color:                  	#E5CEAEff;
     expand:                         false;
     margin:                         0px 0px 0px 0px;
     padding:                        0px;
@@ -125,11 +125,11 @@ element-text {
 }
 
 element selected {
-    background-color:               @selected;
+    background-color:               #E5CEAEff;
     text-color:                     @background;
     border:                  		0px;
     border-radius:                  10px;
-    border-color:                  	@selected;
+    border-color:                  	#E5CEAEff;
 }
 
 element.active,
@@ -141,7 +141,7 @@ element.selected.urgent {
 }
 
 element.selected.urgent {
-  border-color: @selected;
+  border-color: #E5CEAEff;
 }
 
 element.urgent,
@@ -153,5 +153,5 @@ element.selected.active {
 }
 
 element.selected.active {
-  border-color: @selected;
+  border-color: #E5CEAEff;
 }

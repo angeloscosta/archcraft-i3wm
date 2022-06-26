@@ -17,9 +17,10 @@ window {
     background-color:               @background;
     text-color:                     @foreground;
     border:                  		0px;
-    border-color:                  	#E5CEAEff;
+    border-color:                  	@selected;
     border-radius:                  12px;
-    width:                          300px;
+    width:                          450px;
+    height:                         470px;
     location:                       center;
     anchor:                         center;
     x-offset:                       0;
@@ -33,13 +34,13 @@ prompt {
 	background-color: 				@background;
 	text-color: 					@foreground;
     border:                  		0px 0px 0px 0px;
-    border-color:                  	#E5CEAEff;
+    border-color:                  	@selected;
     border-radius:                  0px;
 }
 
 textbox-prompt-colon {
 	expand: 						false;
-	str: 							"";
+	str: 							"直";
     border-radius:                  10px;
     background-color:               @highlight;
     text-color:                     @background;
@@ -59,13 +60,13 @@ entry {
 }
 
 inputbar {
-	children: 						[ textbox-prompt-colon, prompt ];
+	children: 						[ textbox-prompt-colon, prompt, entry ];
     spacing:                        0;
     background-color:               @background;
     text-color:                     @foreground;
     border:                  		0px;
     border-radius:                  0px;
-    border-color:                  	#E5CEAEff;
+    border-color:                  	@selected;
     expand:                         false;
     margin:                         0px 0px 0px 0px;
     padding:                        0px;
@@ -82,7 +83,7 @@ case-indicator {
 listview {
     background-color:               @background;
     columns:                        1;
-    lines:							5;
+    lines:							8;
     spacing:                        4px;
     cycle:                          true;
     dynamic:                        true;
@@ -123,11 +124,11 @@ element-text {
 }
 
 element selected {
-    background-color:               #E5CEAEff;
+    background-color:               @selected;
     text-color:                     @background;
     border:                  		0px;
     border-radius:                  10px;
-    border-color:                  	#E5CEAEff;
+    border-color:                  	@selected;
 }
 
 element.active,
@@ -138,7 +139,7 @@ element.selected.urgent {
 }
 
 element.selected.urgent {
-  border-color: #E5CEAEff;
+  border-color: @selected;
 }
 
 element.urgent,
@@ -149,5 +150,5 @@ element.selected.active {
 }
 
 element.selected.active {
-  border-color: #E5CEAEff;
+  border-color: @selected;
 }
