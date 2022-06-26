@@ -1,2 +1,2 @@
 # archcraft-i3wm
- // Configuration : i3wm
+ // My personal configuration : i3wm
