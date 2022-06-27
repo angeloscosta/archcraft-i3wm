@@ -9,7 +9,7 @@ post_install() {
 		mkdir -p ${_dir}/i3
 		cp -rf /etc/skel/.config/i3/* ${_dir}/i3/
 		chown -R ${_user}:${_group} ${_dir}/i3
-		cp -rf /etc/skel/Pictures/* Pictures/
+		cp -rf /etc/skel/Wallpaper/* Pictures/
 		chown -R ${_user}:${_group} ${_dir}/i3
 		if [[ -d "${_dir}/i3" ]]; then
 			echo -e "[*] Done!\n"
