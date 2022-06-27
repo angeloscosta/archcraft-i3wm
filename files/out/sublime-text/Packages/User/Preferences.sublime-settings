@@ -1,0 +1,13 @@
+{
+	"theme": "GitHub Adaptive.sublime-theme",
+	"color_scheme": "GitHub Dimmed.sublime-color-scheme",
+	"dark_theme": "GitHub Dark.sublime-theme",
+	"light_theme": "GitHub Light.sublime-theme",
+	"dark_color_scheme": "GitHub Dark.sublime-color-scheme",
+	"light_color_scheme": "GitHub Light.sublime-color-scheme",
+	"font_size": 19,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+}

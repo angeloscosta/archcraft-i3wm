@@ -1,0 +1,31 @@
+[Added Associations]
+image/png=viewnior.desktop;
+image/jpeg=viewnior.desktop;
+image/gif=viewnior.desktop;
+image/svg+xml=viewnior.desktop;
+text/x-csrc=sublime_text.desktop;
+text/plain=wine-extension-txt.desktop;sublime_text.desktop;vim.desktop;
+application/x-shellscript=sublime_text.desktop;sublime_text.desktop;xfce4-terminal.desktop;
+application/x-theme=sublime_text.desktop;
+application/json=sublime_text.desktop;
+text/html=sublime_text.desktop;firefox.desktop;
+text/x-matlab=sublime_text.desktop;vim.desktop;
+application/x-compressed-tar=xarchiver.desktop;gcr-viewer.desktop;
+application/x-wine-extension-ini=sublime_text.desktop;
+application/octet-stream=sublime_text.desktop;
+application/x-zerosize=sublime_text.desktop;
+application/x-yaml=sublime_text.desktop;
+text/x-python3=sublime_text.desktop;
+application/xml=sublime_text.desktop;
+
+[Default Applications]
+inode/directory=thunar.desktop
+image/gif=viewnior.desktop
+image/svg+xml=viewnior.desktop
+x-scheme-handler/etcher=balena-etcher-electron.desktop
+x-scheme-handler/discord-396515353498484736=discord-396515353498484736.desktop
+application/x-wine-extension-ini=sublime_text.desktop
+application/x-shellscript=sublime_text.desktop
+application/x-yaml=sublime_text.desktop
+text/x-python3=sublime_text.desktop
+text/plain=sublime_text.desktop
