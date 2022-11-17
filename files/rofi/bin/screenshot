@@ -3,20 +3,21 @@
 ## Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
 ## Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
 
-DIR="$HOME/.config/i3"
+DIR="$HOME/.config/"
 rofi_command="rofi -theme $DIR/rofi/themes/screenshot.rasi"
 
 time=`date +%Y-%m-%d-%H-%M-%S`
 geometry=`xrandr | head -n1 | cut -d',' -f2 | tr -d '[:blank:],current'`
 dir="`xdg-user-dir PICTURES`/Screenshots"
+#dir="$HOME/Pictures/Screenshots"
 file="Screenshot_${time}_${geometry}.png"
 
 # Buttons
-screen=""
-area=""
-window=""
-infive=""
-inten=""
+screen=" Screen"
+area=" Area"
+window=" Window"
+infive=" In 5 seconds"
+inten=" Insert delay"
 
 # notify and view screenshot
 notify_view () {

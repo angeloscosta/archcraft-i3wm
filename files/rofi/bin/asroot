@@ -3,20 +3,20 @@
 ## Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
 ## Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
 
-DIR="$HOME/.config/i3"
+DIR="$HOME/.config/"
 
 rofi_command="rofi -theme $DIR/rofi/themes/asroot.rasi"
 
 # Apps
 terminal=" Alacritty"
 files=" Thunar"
-editor=" Geany"
+editor=" Sublime-Text"
 clifm=" Ranger"
 lpad=" Leafpad"
-nano=" Nano"
+clieditor=" Vim"
 
 # Variable passed to rofi
-options="$terminal\n$files\n$editor\n$clifm\n$nano"
+options="$terminal\n$files\n$editor\n$clifm\n$clieditor"
 
 # Functions
 
@@ -29,16 +29,16 @@ case $chosen in
         "$DIR"/bin/apps_as_root.sh 'dbus-run-session thunar'
         ;;
     $editor)
-        "$DIR"/bin/apps_as_root.sh geany
+        "$DIR"/bin/apps_as_root.sh subl
         ;;
     $clifm)
         "$DIR"/bin/apps_as_root.sh 'alacritty --class alacritty-float,alacritty-float --config-file /root/.config/alacritty/alacritty.yml -e ranger'
         ;;
+    $clieditor)
+        "$DIR"/bin/apps_as_root.sh 'alacritty --config-file /root/.config/alacritty/alacritty.yml -e vim'
+        ;;
     $lpad)
         "$DIR"/bin/apps_as_root.sh leafpad
-        ;;
-    $nano)
-        "$DIR"/bin/apps_as_root.sh 'alacritty --config-file /root/.config/alacritty/alacritty.yml -e nano'
         ;;
 esac
 
