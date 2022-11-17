@@ -4,8 +4,8 @@
 @import "colors.rasi"
 
 * {
-    background-color:       @background;
-    text-color:             @foreground;
+    background-color:       @BG;
+    text-color:             @FG;
 	font:				 	"JetBrains Mono Medium 10";
 }
 
@@ -14,7 +14,7 @@ window {
     padding:    			20px;
     border:					2px;
     border-radius:          8px;
-    border-color:           #E5CEAEff;
+    border-color:           @BDR;
     location:               center;
     x-offset:               0;
     y-offset:               -4%;
@@ -23,5 +23,5 @@ window {
 entry {
     expand: 				true;
     width: 					150px;
-    text-color:				#E5CEAEff;
+    text-color:				@FG;
 }
