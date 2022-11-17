@@ -1,7 +1,7 @@
 # Maintainer: Aditya Shakya <adi1090x@gmail.com>
 
 pkgname=archcraft-i3wm
-pkgver=1.0
+pkgver=1.1
 pkgrel=5
 pkgdesc="i3wm Configurations for Archcraft"
 url="https://github.com/angeloscosta/archcraft-i3wm"
