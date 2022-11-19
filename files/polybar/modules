@@ -256,7 +256,7 @@ label-focused-background = ${color.ORANGE}
 ; Default: %icon%  %name%
 label-unfocused = %icon%
 ;label-unfocused-foreground = ${color.FG}
-label-unfocused-foreground = ${color.BLUE}
+label-unfocused-foreground = ${color.WHITE}
 label-unfocused-background = ${color.BGL}
 
 
@@ -642,8 +642,8 @@ format-disconnected-foreground = ${color.FGA}
 format-disconnected-background = ${color.BG}
 format-disconnected-padding = 1
 
-label-connected = "%{A1:~/.config/i3/rofi/bin/network_menu &:}%downspeed%, %upspeed%%{A}"
-label-disconnected = "%{A1:~/.config/i3/rofi/bin/network_menu &:}Offline%{A}"
+label-connected = "%{A1:~/.config/rofi/bin/network_menu &:}Online%{A}"
+label-disconnected = "%{A1:~/.config/rofi/bin/network_menu &:}Offline%{A}"
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -716,12 +716,12 @@ format-disconnected-foreground = ${color.FGA}
 ;   %linkspeed% [wired]
 ; Default: %ifname% %local_ip%
 ;label-connected = "%essid%  %downspeed%"
-label-connected = "%{A1:~/.config/i3/rofi/bin/network_menu &:}%essid%%{A}"
+label-connected = "%{A1:~/.config/rofi/bin/network_menu &:}%essid%%{A}"
 
 ; Available tokens:
 ;   %ifname%    [wireless+wired]
 ; Default: (none)
-label-disconnected = "%{A1:~/.config/i3/rofi/bin/network_menu &:}Offline%{A}"
+label-disconnected = "%{A1:~/.config/rofi/bin/network_menu &:}Offline%{A}"
 
 ; Available tokens:
 ;   %ifname%    [wireless+wired]
@@ -953,7 +953,7 @@ type = custom/text
 
 content = " "
 content-font = 2
-content-foreground = ${color.RED}
+content-foreground = ${color.WHITE}
 content-padding = 0
 
 click-left = ~/.config/i3/rofi/bin/powermenu
