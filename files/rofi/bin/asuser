@@ -4,19 +4,20 @@
 ## Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
 
 DIR="$HOME/.config/"
+YTDIR="/opt/Youtube\ Music/"
 
 rofi_command="rofi -theme $DIR/rofi/themes/asuser.rasi"
 
 # Apps
-koodo=" Koodo Reader"
-swall=" Shuffle Wallpaper"
-editor=" Sublime-Text"
-#clifm=" Ranger"
-clieditor=" Vim"
-ytmusic=" Youtube Music"
+koodo="Koodo Reader"
+swall="Shuffle Wallpaper"
+editor="Sublime-Text"
+disc="Discord"
+steam="Steam"
+ytmusic="Youtube Music"
 
 # Variable passed to rofi
-options="$koodo\n$swall\n$editor\n$clieditor\n$ytmusic"
+options="$koodo\n$swall\n$editor\n$disc\n$ytmusic\n$steam"
 
 # Functions
 
@@ -31,11 +32,14 @@ case $chosen in
     $editor)
         subl
         ;;
-    $clieditor)
-        alacritty --config-file ~/.config/alacritty/alacritty.yml -e vim
+    $disc)
+        discord
         ;;
     $ytmusic)
         youtube-music
+        ;;
+    $steam)
+        steam-native
         ;;
 esac
 
