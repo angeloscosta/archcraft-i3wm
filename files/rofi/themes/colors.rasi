@@ -6,12 +6,13 @@
 * {
     BG:    #0E0E10; //Jet-black
     FG:    #FFFFFFff;
-    SEL:   #EC7875ff;
-    BDR:   #EC7875ff;
+    SEL:   #B2615A; //Vermillion
+    BDR:   #B2615A; //Vermillion
     BGA:   #202020ff;
     
     UGT:   #EC7875ff;
 	IMG:   #E5CEAEff;
 	ON:    #61C766ff;
 	OFF:   #EC7875ff;
+    rows: 10;
 }
